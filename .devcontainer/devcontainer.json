@@ -1,0 +1,27 @@
+{
+    "name": "toolkit-golang",
+	"image": "golang:1.23.0-bullseye",
+    "containerEnv": {
+		"TZ": "Asia/Tokyo"
+	},
+	"features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": false,
+            "installOhMyZsh": false,
+            "installOhMyZshConfig": false,
+            "upgradePackages": false,
+            "username": "vscode",
+            "userUid": "automatic",
+            "userGid": "automatic"
+        }
+	},
+	//"postStartCommand": "",
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go"
+            ]
+        }
+    }
+}
